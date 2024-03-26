@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-def best_score(a_dictionary):
-    """Returns a key with the biggest integer value."""
-    if not isinstance(a_dictionary, dict) or len(a_dictionary) == 0:
-        return None
+def weight_average(my_list=[]):
+    """Return the weighted average of all integers in a list of tuples."""
+    if not isinstance(my_list, list) or len(my_list) == 0:
+        return (0)
 
-    ret = list(a_dictionary.keys())[0]
-    big = a_dictionary[ret]
-    for k, v in a_dictionary.items():
-        if v > big:
-            big = v
-            ret = k
-    return (ret)
+    avg = 0
+    size = 0
+    for tup in my_list:
+        avg += (tup[0] * tup[1])
+        size += tup[1]
+    return (avg / size)
+    

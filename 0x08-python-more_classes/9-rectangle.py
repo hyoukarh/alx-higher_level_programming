@@ -148,6 +148,18 @@ class Rectangle:
             return rect_1
         return rect_2
 
+    @classmethod
+    def square(cls, size=0):
+        """_summary_
+
+        Args:
+            size (int, optional): _description_. Defaults to 0.
+
+        Returns:
+            _type_: _description_
+        """
+        return cls(size, size)
+
     def __str__(self):
         """_summary_
 

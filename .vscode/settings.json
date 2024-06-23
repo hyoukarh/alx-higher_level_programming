@@ -1,4 +1,7 @@
 {
     "python.pythonPath": "env/bin/python",
-    "python.linting.pycodestyleEnabled": true 
-}
+    "python.linting.pycodestyleEnabled": true,
+    "standard.run": "onSave",
+    "standard.usePackageJson": true,
+    "standard.engine": "semistandard"
+  }

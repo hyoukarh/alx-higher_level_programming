@@ -1,7 +1,14 @@
 {
-    "python.pythonPath": "env/bin/python",
-    "python.linting.pycodestyleEnabled": true,
-    "standard.run": "onSave",
-    "standard.usePackageJson": true,
-    "standard.engine": "semistandard"
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.options": {
+    "configFile": ".eslintrc.json"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
   }
+}
